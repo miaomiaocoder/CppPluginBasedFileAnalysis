@@ -18,7 +18,7 @@
 
 * finalVersion
     * 最终版本
-    * [run.sh](version1/run.sh) 
+    * [run.sh](finalVersion/run.sh) 
         - 使用脚本控制cmake构建
             ```sh
             rm -rf build plugin
@@ -27,7 +27,7 @@
             cmake ..
             make
             ```
-    * [clean.sh](version1/clean.sh)  
+    * [clean.sh](finalVersion/clean.sh)  
         - 对 cmake 产生的文件 clean
             ```
             rm -rf build plugin
