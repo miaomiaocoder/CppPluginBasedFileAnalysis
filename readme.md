@@ -3,11 +3,19 @@
 ### 简介
 
 使用c++实现基于插件框架结构的文件统计分析软件。本科大三期间完成，使用cmake构建，插件通过动态链接库实现。
+软件主要功能：
+* 插件1：统计指定的某个文件的行数
+* 插件2：统计指定的某个文件的单词数
+* 插件3：统计指定目录下、特定后缀名的所有文件的行数
+* 插件4：统计指定目录下、特定后缀名的所有文件的单词数
+* 插件5：统计指定的某个文件的大小(字节数)
+* 插件6：统计指定目录下、特定后缀名的所有文件的大小(字节数)
 
 
 ### 开发环境
 
 * debian linux环境
+* VS Code
 
 ### 编译
 
@@ -35,16 +43,24 @@
     * [CMakeLists.txt](finalVersion/CMakeLists.txt)
     * [IPlugin.h](finalVersion/IPlugin.h)
     * [Line.cpp](finalVersion/Line.cpp)
+        - 统计指定的某个文件的行数
     * [Word.cpp](finalVersion/Word.cpp)
+        - 统计指定的某个文件的单词数
     * [Size.cpp](finalVersion/Size.cpp)
     * [SuffixL.cpp](finalVersion/SuffixL.cpp)
-    * [SuffixS.cpp](finalVersion/SuffixS.cpp)
+        - 统计指定目录下、特定后缀名的所有文件的行数
     * [SuffixW.cpp](finalVersion/SuffixW.cpp)
-    * main.cpp
-    * SearchPlugin.cpp
-    * SearchPlugin.h
-    * CPluginController.cpp
-    * CPluginController.h
+        - 统计指定目录下、特定后缀名的所有文件的单词数
+    * [SuffixS.cpp](finalVersion/SuffixS.cpp)
+        - 统计指定目录下、特定后缀名的所有文件的大小(字节数)
+    * [main.cpp](finalVersion/main.cpp)
+        - 加载插件主程序
+    * [SearchPlugin.cpp](finalVersion/SearchPlugin.cpp)
+    * [SearchPlugin.h](finalVersion/SearchPlugin.h)
+        - ```class SearchPlugin``` 用来实现在目录plugin下搜索插件
+    * [CPluginController.cpp](finalVersion/CPluginController.cpp)
+    * [CPluginController.h](finalVersion/CPluginController.h)
+        - ```class CPluginController``` 用来管理插件
 
 * version1
     * [run.sh](version1/run.sh) 使用脚本控制cmake构建
@@ -161,8 +177,8 @@ _最终版本：_
 #### 我的插件
 * 插件1：统计指定的某个文件的行数
 * 插件2：统计指定的某个文件的单词数
-* 插件3：统计指定目录下、特定后缀名的所有文件的行数。
-* 插件4：统计指定目录下、特定后缀名的所有文件的单词数。
+* 插件3：统计指定目录下、特定后缀名的所有文件的行数
+* 插件4：统计指定目录下、特定后缀名的所有文件的单词数
 * 插件5：统计指定的某个文件的大小(字节数)
 * 插件6：统计指定目录下、特定后缀名的所有文件的大小(字节数)
 
